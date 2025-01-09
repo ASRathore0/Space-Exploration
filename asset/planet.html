@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets Exploration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background: #111;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .section {
+            padding: 50px 20px;
+            position: relative;
+        }
+        footer {
+            background: #111;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-in, transform 1s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .planet-img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            animation: float 3s ease-in-out infinite alternate;
+        }
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the Planets</h1>
+        <nav>
+            <ul>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#solar">Solar System</a></li>
+                <li><a href="#exoplanets">Exoplanets</a></li>
+                <li><a href="#attributes">Attributes</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#mythology">Mythology</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="formation" class="section fade-in">
+        <h2>Formation of Planets</h2>
+        <img src="/images/formation.jpg" alt="Planet Formation" class="planet-img">
+        <p>Planets are thought to form from a nebula that collapses into a rotating disk of gas and dust. A protostar forms at
+          the center, while planetesimals (small solid bodies) grow through accretion—where dust particles collide and stick
+          together. Over time, these bodies become protoplanets and eventually planets.
+        
+          Once a star ignites, remaining gas and dust are cleared out, leaving behind planets and smaller bodies. Some moons
+          form like planets, while others, like Triton, may be captured by gravity. Early planetary surfaces melt due to impacts
+          and radioactive decay, causing differentiation (denser materials sink to form a core).
+        
+          New observations of exoplanetary systems suggest that a star's metal content influences its likelihood of forming
+          planets. Metal-rich stars are more likely to have planetary systems.
+        </p>
+    </section>
+    
+    <section id="solar" class="section fade-in">
+        <h2>Planets in the Solar System</h2>
+        <img src="/images/solar_system.jpg" alt="Solar System" class="planet-img">
+        <p>The Solar System consists of eight planets in order of increasing distance from the Sun: Mercury, Venus, Earth,
+          Mars, Jupiter, Saturn, Uranus, and Neptune. Jupiter is the largest planet, with a mass 318 times that of Earth,
+          while Mercury is the smallest, with only 0.055 Earth masses. Based on composition, planets are classified into
+          three types. Terrestrial planets—Mercury, Venus, Earth, and Mars—are rocky and dense. Gas giants, Jupiter and
+          Saturn, are composed mostly of hydrogen and helium, while ice giants, Uranus and Neptune, contain water, methane,
+          and ammonia.
+        
+          In addition to planets, the Solar System contains dwarf planets, which are rounded by gravity but have not cleared
+          their orbits. These include Ceres, Pluto, Eris, Haumea, and Makemake, among others. Ceres, located in the
+          asteroid belt, is the smallest, while Pluto and Eris are the largest. Most dwarf planets reside beyond Neptune in
+          the Kuiper Belt and scattered disc. They are composed mainly of ice and rock, unlike the rocky terrestrial
+          planets.
+        
+          There are at least 19 planetary-mass moons, meaning they are large enough to take a spherical shape. Notable
+          examples include Earth’s Moon, Jupiter’s Io, Europa, Ganymede, and Callisto, Saturn’s Titan, Enceladus,
+          Uranus’s Titania, Oberon, Neptune’s Triton, and Pluto’s Charon. Some moons, like Europa and Titan, are
+          of great scientific interest due to their potential subsurface oceans, which may harbor conditions suitable for
+          life.
+        </p>
+    </section>
+    
+    <section id="exoplanets" class="section fade-in">
+      <h2>Exoplanets</h2>
+      <img src="/images/Exoplanets.jpg" alt="Exoplanets" class="planet-img">
+      <p>An exoplanet is a planet outside the Solar System, with over 7,026 confirmed exoplanets as of July 2024. They vary
+        in size from gas giants larger than Jupiter to Earth-sized rocky planets and even smaller. The first confirmed
+        exoplanets were discovered in 1992 orbiting a pulsar, while the first around a main-sequence star was found in 1995
+        (51 Pegasi b). The Kepler space telescope has identified many Neptune-sized and smaller planets, including some in
+        the habitable zone, where conditions could allow liquid water. Some unique exoplanet types include super-Earths,
+        mini-Neptunes, and hot Jupiters, which orbit extremely close to their stars. Others, like COCONUTS-2b, have orbits
+        much larger than any planet in the Solar System. Studies suggest that one in five Sun-like stars may have an
+        Earth-sized planet in the habitable zone, raising the possibility of extraterrestrial life.</p>
+    </section>
+    
+    <section id="attributes" class="section fade-in">
+        <h2>Attributes of Planets</h2>
+        <img src="/images/planet_attributes.webp" alt="Planet Attributes" class="planet-img">
+        <p>Although each planet has unique characteristics, they share common dynamic properties, especially in their orbits. In
+          the Solar System, planets orbit the Sun in the same direction as its rotation, but some exoplanets, like WASP-17b,
+          orbit in the opposite direction. A planet's orbital period or year depends on its distance from the star—the farther
+          it is, the longer its orbit. No planet has a perfectly circular orbit; instead, they follow elliptical paths, with the
+          closest point to the star called perihelion and the farthest called aphelion. The eccentricity of an orbit determines
+          its shape, with low eccentricity meaning a nearly circular orbit, while high eccentricity results in an elongated
+          orbit, as seen in some exoplanets and comets. The semi-major axis defines the size of an orbit, and the inclination
+          measures how tilted it is relative to a reference plane. In the Solar System, most planets have low inclination, but
+          Pluto, Eris, and some comets have highly tilted orbits. Some moons also exhibit unique orbital behavior, such as
+          Triton, which orbits Neptune retrograde, meaning in the opposite direction of the planet’s rotation.
+        </p>
+    </section>
+    
+    <section id="history" class="section fade-in">
+        <h2>History and Etymology</h2>
+        <img src="/images/history.gif" alt="History of Planets" class="planet-img">
+        <p>The concept of planets has evolved significantly throughout the history of astronomy, from the divine lights observed
+          by ancient civilizations to the scientific understanding we have today. Early astronomers viewed planets as wandering
+          stars, with the five classical planets, visible to the naked eye, having a significant impact on mythology, religious
+          cosmology, and ancient astronomy. The Babylonians were the first known civilization to have a functional theory of the
+          planets, with surviving texts such as the Babylonian Venus tablet and the MUL.APIN, which documented the motions of
+          the Sun, Moon, and planets. The Greeks, initially less focused on the planets, developed a heliocentric system by
+          Aristarchus of Samos in the 3rd century BC, though the geocentric model remained dominant until the Scientific
+          Revolution.
+        
+          Medieval astronomers in India and the Islamic world built on these ideas, with figures like Aryabhata and Ibn
+          al-Haytham contributing significant advancements. The Scientific Revolution in the 16th century shifted the definition
+          of a planet from one that moved across the sky relative to fixed stars to a body that orbited the Sun. This change led
+          to Earth being added to the list of planets, and the Sun removed. The discovery of Uranus in 1781, along with other
+          major astronomical advancements, further expanded our understanding of planets, with new categories of "satellite
+          planets" and "minor planets" like asteroids emerging.
+        
+          In the 20th century, Pluto was initially classified as the ninth planet, but further observations led to its
+          reclassification as a dwarf planet in 2006 by the International Astronomical Union (IAU). The IAU's definition of a
+          planet, which requires an object to orbit the Sun, have sufficient mass for a nearly round shape, and clear its
+          orbital neighborhood, resulted in the Solar System being considered to have eight planets. However, the definition
+          remains debated, with some astronomers advocating for a geophysical approach based on intrinsic properties like shape
+          and mass. The discovery of exoplanets and their unique characteristics has added further complexity to the definition
+          of what constitutes a planet, particularly when considering objects with masses approaching that of brown dwarfs or
+          those formed through gas-cloud collapse.
+
+        </p>
+    </section>
+    
+    <section id="mythology" class="section fade-in">
+      <h2>Mythology and Naming</h2>
+      <img src="/images/mythology.jpg" alt="Planet Mythology" class="planet-img">
+      <p>The naming of planets differs between those in the Solar System and exoplanets. Exoplanets are typically named
+        after their parent star with an added designation for their order of discovery, such as Proxima Centauri b. The
+        planets in the Solar System (other than Earth) are named based on ancient Babylonian, Greek, and Roman traditions.
+        The Babylonians first named the planets after gods, with the Greeks and Romans adopting these names and associating
+        them with their gods. For example, Venus was named after the goddess of love, Mars after the god of war, and Jupiter
+        after the chief god. Earth’s name, however, is not derived from Greco-Roman mythology, but from Old English, meaning
+        "ground" or "dirt." Different cultures use varying naming systems; in India, the planets are named after deities
+        like Surya for the Sun and Shani for Saturn, while Persian, Chinese, and Hebrew systems have their own planetary
+        names based on gods, elements, or descriptive terms. Additionally, modern moons and asteroids are named with
+        associations to their parent planets or mythological figures.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Explore the Planets</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll(".fade-in");
+            const options = {
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, options);
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
